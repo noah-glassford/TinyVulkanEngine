@@ -13,6 +13,12 @@ public:
 
 	bool shouldClose() { return glfwWindowShouldClose(m_Window); }
 
+	/*
+	TODO:
+		-Add window resizing
+		-Add fulscreen support
+	*/
+
 private:
 	const int m_Width;
 	const int m_Height;
