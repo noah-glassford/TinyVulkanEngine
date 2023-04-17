@@ -13,6 +13,8 @@ public:
 
 	bool shouldClose() { return glfwWindowShouldClose(m_Window); }
 
+	GLFWwindow* GetWindow() { return m_Window; }
+
 	/*
 	TODO:
 		-Add window resizing

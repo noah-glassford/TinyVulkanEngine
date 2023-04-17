@@ -12,3 +12,9 @@ void EngineApplication::Update() //Deepest tick of the engine, invoke all major 
 		glfwPollEvents();
 	}
 }
+
+EngineApplication& EngineApplication::getInstance()
+{
+	static EngineApplication _instance;
+	return _instance;
+}
