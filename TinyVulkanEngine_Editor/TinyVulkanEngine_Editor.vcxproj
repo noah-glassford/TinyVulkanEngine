@@ -136,6 +136,7 @@
     <ClCompile Include="Source\EngineApplication.cpp" />
     <ClCompile Include="Source\GraphicsHandler.cpp" />
     <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\VulkanManager.cpp" />
     <ClCompile Include="Source\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +144,7 @@
     <ClInclude Include="Source\EngineApplication.h" />
     <ClInclude Include="Source\GraphicsHandler.h" />
     <ClInclude Include="Source\Transform.h" />
+    <ClInclude Include="Source\VulkanManager.h" />
     <ClInclude Include="Source\Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
