@@ -6,13 +6,15 @@
 
 int main()
 {
-	EngineApplication app{};
+	
 
-	app.Initialize();
+	
+	EngineApplication::getInstance().Initialize();
+
 
 	try
 	{
-		app.Update(); 
+		EngineApplication::getInstance().Update();
 	}
 	catch (const std::exception& e)
 	{

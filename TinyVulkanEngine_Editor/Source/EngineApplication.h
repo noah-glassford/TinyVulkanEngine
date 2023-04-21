@@ -5,18 +5,18 @@ class EngineApplication
 {
 public:
 
-	int WIDTH = 800;
-	int HEIGHT = 800;
+	const static int WIDTH = 800;
+	const static int HEIGHT = 800;
 
-	void Initialize();
-	void Update();
+	static void Initialize();
+	static void Update();
 	Window getWindow() { return m_Window; }
 
 	static EngineApplication& getInstance();
 
 private:
 	EngineApplication() {};
-	Window m_Window{ WIDTH, HEIGHT, "EngineApplication" };
+	static Window m_Window;
 	static EngineApplication* _instance; //The core engine class is a singleton because there should never be more than one of it per instance of the application
 
 public:
