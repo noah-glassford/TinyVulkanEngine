@@ -5,12 +5,13 @@ class GraphicsHandler
 {
 public:
 	
+    GraphicsHandler();
+    ~GraphicsHandler();
 
     void InitializeGraphics();
     void RenderLoop();
 
-    GraphicsHandler();
-    ~GraphicsHandler();
+   
 
 private:
     VulkanManager m_vulkanManager;
