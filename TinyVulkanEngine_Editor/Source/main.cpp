@@ -6,12 +6,7 @@
 
 int main()
 {
-	
-
-	
 	EngineApplication::getInstance().Initialize();
-
-
 	try
 	{
 		EngineApplication::getInstance().Update();
@@ -21,6 +16,5 @@ int main()
 		std::cerr << e.what() << '\n'; 
 		return EXIT_FAILURE;
 	}
-
 	return EXIT_SUCCESS;
 }

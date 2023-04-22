@@ -5,7 +5,8 @@ class GraphicsHandler
 {
 public:
 	
-    void InitVulkan();
+
+    void InitializeGraphics();
     void RenderLoop();
 
     GraphicsHandler();

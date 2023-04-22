@@ -18,4 +18,6 @@ void Window::initWindow()
 	glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 
 	m_Window = glfwCreateWindow(m_Width, m_Height, m_WindowName.c_str(), nullptr, nullptr);
+
+	glfwSetWindowUserPointer(m_Window, this);
 }

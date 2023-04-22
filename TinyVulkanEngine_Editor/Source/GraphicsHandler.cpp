@@ -10,12 +10,12 @@ GraphicsHandler::~GraphicsHandler()
 }
 
 
-void GraphicsHandler::InitVulkan()
+void GraphicsHandler::InitializeGraphics()
 {
 	m_vulkanManager.Initialize();
 }
 
 void GraphicsHandler::RenderLoop()
 {
-
+	m_vulkanManager.Render();
 }
