@@ -24,13 +24,13 @@
     <ClCompile Include="Source\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\GraphicsHandler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Source\VulkanManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Source\VulkanPipeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\VulkanDevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,19 +41,19 @@
     <ClInclude Include="Source\Window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Source\GraphicsHandler.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="Source\ECSWrapper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\Transform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Source\VulkanManager.h">
+    <ClInclude Include="Source\VulkanManager.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\VulkanPipeline.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\VulkanDevice.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

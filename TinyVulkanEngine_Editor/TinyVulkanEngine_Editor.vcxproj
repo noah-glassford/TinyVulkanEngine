@@ -134,8 +134,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source\EngineApplication.cpp" />
-    <ClCompile Include="Source\GraphicsHandler.cpp" />
     <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\VulkanDevice.cpp" />
     <ClCompile Include="Source\VulkanManager.cpp" />
     <ClCompile Include="Source\VulkanPipeline.cpp" />
     <ClCompile Include="Source\Window.cpp" />
@@ -143,9 +143,9 @@
   <ItemGroup>
     <ClInclude Include="Source\ECSWrapper.h" />
     <ClInclude Include="Source\EngineApplication.h" />
-    <ClInclude Include="Source\GraphicsHandler.h" />
     <ClInclude Include="Source\Transform.h" />
-    <ClInclude Include="Source\VulkanManager.h" />
+    <ClInclude Include="Source\VulkanDevice.hpp" />
+    <ClInclude Include="Source\VulkanManager.hpp" />
     <ClInclude Include="Source\VulkanPipeline.hpp" />
     <ClInclude Include="Source\Window.h" />
   </ItemGroup>

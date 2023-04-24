@@ -1,7 +1,6 @@
 #include "EngineApplication.h"
 
-Window EngineApplication::m_Window = Window{ WIDTH, HEIGHT, "TinyVulkanEngine" };
-GraphicsHandler EngineApplication::m_graphicsHandler = GraphicsHandler();
+
 
 void EngineApplication::Initialize()
 {
@@ -11,10 +10,9 @@ void EngineApplication::Initialize()
 
 void EngineApplication::Update() //Deepest tick of the engine, invoke all major system updates here
 {
-	while (! m_Window.shouldClose())
+	while (!m_vulkanManager.m_Window.shouldClose())
 	{
 		glfwPollEvents();
-		//m_graphicsHandler.RenderLoop();
 	}
 }
 

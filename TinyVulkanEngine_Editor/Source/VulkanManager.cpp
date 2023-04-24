@@ -1,7 +1,6 @@
-#include "VulkanManager.h"
+#include "VulkanManager.hpp"
 
 
 void VulkanManager::Initialize()
 {
-	m_GraphicsPipeline = VulkanPipeline("shaders/vert.spv", "shaders/frag.spv");
 }

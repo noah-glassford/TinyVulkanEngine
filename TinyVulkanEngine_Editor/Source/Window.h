@@ -2,24 +2,20 @@
 
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
-
+#include <stdexcept>
 #include <string>
-
+#include <iostream>
 class Window
 {
 public:
 	Window(int width, int height, std::string name);
 	~Window();
 
-	bool shouldClose() { return glfwWindowShouldClose(m_Window); }
+	bool shouldClose();
+
+	void createWindowSurface(VkInstance instance, VkSurfaceKHR *surface);
 
 	GLFWwindow* GetWindow() { return m_Window; }
-
-	/*
-	TODO:
-		-Add window resizing
-		-Add fulscreen support
-	*/
 
 private:
 	const int m_Width;
